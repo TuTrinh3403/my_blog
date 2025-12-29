@@ -151,3 +151,44 @@ i.fa-heart, i.fa-star, i.fa-sparkles {
     color: #FF69B4;
 }
 
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.cert-item {
+    background-color: #FFD1DC;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255,105,180,0.3);
+    transition: transform 0.3s;
+}
+
+.cert-item:hover {
+    transform: scale(1.05);
+}
+
+.cert-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 4px solid #FF69B4;
+    box-shadow: 0 4px 15px rgba(255,105,180,0.4);
+    margin-bottom: 15px;
+}
+
+.cert-item p {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.cert-item strong {
+    color: #FF69B4;
+    font-size: 1.2em;
+}
+
