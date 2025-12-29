@@ -1,0 +1,153 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+body {
+    font-family: 'Georgia', serif; /* Font mềm mại, nữ tính */
+    margin: 0;
+    padding: 0;
+    background-color: #FFF0F5; /* Lavender blush - hồng nhạt */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FFB6C1; /* Light Pink */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(255,105,180,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;     /* Đẩy toàn bộ menu sang góc phải */
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 0 0 40px;             /* Khoảng cách giữa các nút (chỉ margin-left để đẹp) */
+}
+
+nav ul li:first-child {
+    margin-left: 0;                 /* Nút đầu tiên (Home) không có margin thừa */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #FF69B4; /* Hot Pink */
+}
+
+nav ul li a i {
+    margin-right: 8px; /* Icon trước chữ */
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255,182,193,0.3);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #FF69B4;
+    font-family: 'Courier New', monospace; /* Cute mix */
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #FFB6C1;   /* Viền mỏng hơn một chút cho cân đối */
+    box-shadow: 0 4px 15px rgba(255,105,180,0.4);
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.post {
+    background-color: #FFD1DC;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(255,105,180,0.2);
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post h3 {
+    color: #FF69B4;
+}
+
+.post a {
+    color: #FF69B4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a i {
+    margin-right: 5px;
+}
+
+.post-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255,182,193,0.3);
+}
+
+.back {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    background: #FF69B4;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.back:hover {
+    background: #FF1493;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFB6C1;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Icon cute thêm */
+i.fa-heart, i.fa-star, i.fa-sparkles {
+    color: #FF69B4;
+}
+

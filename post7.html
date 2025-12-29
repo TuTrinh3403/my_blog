@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm việc với file - Girl Python Blog 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-book-open"></i>Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1><i class="fa-solid fa-file"></i> Làm việc với file 🌸</h1>
+            <p><small>Ngày đăng: 29/12/2025 💕</small></p>
+
+            <p>File giống như nhật ký cá nhân – viết và đọc dễ dàng! Dùng để lưu công thức làm đẹp hoặc danh sách shopping. 📝</p>
+
+            <h2>Viết file</h2>
+            <pre><code>with open("diary.txt", "w") as f:
+    f.write("Hôm nay mình học Python siêu vui! 💖")</code></pre>
+
+            <h2>Đọc file</h2>
+            <pre><code>with open("diary.txt", "r") as f:
+    content = f.read()
+    print(content)</code></pre>
+
+            <p>Tạo app lưu note daily cho chị em dùng nhé! 🌟</p>
+
+            <a href="blog.html" class="back">← Quay lại </a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Girl Python Blog 🌟 Made with <i class="fa-solid fa-heart"></i></p>
+    </footer>
+</body>
+</html>
